@@ -10,7 +10,9 @@
 
     <h1 id = "h1">Counter Program</h1>
 
-    <!-- --------------------------- First Approach --------------------------- -->
+    <!-- --------------------- First Approach (With Multiple Functions) ------------------- -->
+
+    <!-- First Method : -->
 
     <!-- <div id="container">
     <label id="counter">0</label> <br><br>
@@ -19,14 +21,24 @@
         <button id="increaseBtn" class="buttons">Increase</button>
     </div> -->
 
-    <!-- ----------------------------- Second Approach --------------------------- -->
+    <!-- Second Method : -->
+
+    <!-- <div id="container">
+    <label id="counter">0</label> <br><br>
+        <button id="decreaseBtn" class="buttons" onclick="Decrease()">Decrease</button>
+        <button id="resetBtn" class="buttons" onclick="Reset()">Reset</button>
+        <button id="increaseBtn" class="buttons" onclick="Increase()">Increase</button>
+    </div> -->
+
+    <!-- --------------------- Second Approach (With Single Function) --------------------- -->
 
     <div id="container">
     <label id="counter">0</label> <br><br>
-        <button id="decreaseBtn" class="buttons">Decrease</button>
-        <button id="resetBtn" class="buttons">Reset</button>
-        <button id="increaseBtn" class="buttons">Increase</button>
+        <button id="decreaseBtn" class="buttons" onclick="Count('decrease')">Decrease</button>
+        <button id="resetBtn" class="buttons" onclick="Count('reset')">Reset</button>
+        <button id="increaseBtn" class="buttons" onclick="Count('increase')">Increase</button>
     </div>
+
 
     <script defer src="script.js"></script>
 
